@@ -5,11 +5,14 @@
  */
 package tao_de_thi;
 
+import java.io.Serializable;
+
 /**
  *
  * @author dinh son
  */
-public class DapAn {
+public class DapAn implements Serializable{
+
     private char TenDapAn;
     private String NoiDung;
     private boolean Boolean;
@@ -39,14 +42,14 @@ public class DapAn {
     }
 
     public DapAn() {
-        this.TenDapAn=' ';
-        this.NoiDung="";
-        this.Boolean=false;
+        this.TenDapAn = ' ';
+        this.NoiDung = "";
+        this.Boolean = false;
     }
 
     public DapAn(String NoiDung, boolean Boolean) {
         this.NoiDung = NoiDung;
         this.Boolean = Boolean;
     }
-    
+
 }

@@ -45,26 +45,31 @@ public class Test {
           System.out.println(DA.getTenDapAn()+"."+DA.getNoiDung());
         }  */
         System.out.println("\n");
-      //  cau1.randomDapAn();
+        //  cau1.randomDapAn();
         for (DapAn DA : cau1.getListDapAn()) {
-          System.out.println(DA.getTenDapAn()+"."+DA.getNoiDung());
+            System.out.println(DA.getTenDapAn() + "." + DA.getNoiDung());
         }
         //
         System.out.println("Đáp án đúng là:");
         for (DapAn DA : cau1.getListDapAn()) {
-          if(DA.isBoolean())
-          System.out.println(DA.getTenDapAn()+"."+DA.getNoiDung());
+            if (DA.isBoolean()) {
+                System.out.println(DA.getTenDapAn() + "." + DA.getNoiDung());
+            }
         }
         System.out.println("\n");
-       // cau1.randomDapAn();
+        // cau1.randomDapAn();
         for (DapAn DA : cau1.getListDapAn()) {
-          System.out.println(DA.getTenDapAn()+"."+DA.getNoiDung());
+            System.out.println(DA.getTenDapAn() + "." + DA.getNoiDung());
         }
         //
         System.out.println("Đáp án đúng là:");
         for (DapAn DA : cau1.getListDapAn()) {
-          if(DA.isBoolean())
-          System.out.println(DA.getTenDapAn()+"."+DA.getNoiDung());
+            if (DA.isBoolean()) {
+                System.out.println(DA.getTenDapAn() + "." + DA.getNoiDung());
+            }
         }
+        MyProcessFile.saveData(cau1, "data.txt");
+        String workingDir = System.getProperty("user.dir");
+		System.out.println("Thư mục Project đang làm việc : " + workingDir);
     }
 }

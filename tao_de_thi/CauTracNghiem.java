@@ -5,6 +5,7 @@
  */
 package tao_de_thi;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -12,7 +13,7 @@ import java.util.Random;
  *
  * @author dinh son
  */
-public class CauTracNghiem {
+public class CauTracNghiem implements Serializable{
 
     private String CauHoi;
     private ArrayList<DapAn> ListDapAn = new ArrayList<DapAn>();
@@ -33,7 +34,7 @@ public class CauTracNghiem {
 
     public void themDapAn(DapAn DA) {
         ListDapAn.add(DA);
-       // ListDapAn.get(ListDapAn.indexOf(DA)).setTenDapAn((char) (65 + ListDapAn.indexOf(DA)));
+
     }
 
     public void randomDapAn() {
